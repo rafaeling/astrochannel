@@ -1,10 +1,14 @@
 #include <iostream>
 
+using namespace std;
+
 #include "astrochannel.hpp"
 
-
-int main() -> noexcept
+int main()
 {
-	const auto arrayTest = array<int, 2, 0>();
-	return 0;
+    std::cout << "Astro Channel Test" << std::endl;
+
+    auto channelArray = astrochannel::channelarray<double, 3>();
+
+    return 0;
 }
